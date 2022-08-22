@@ -5,16 +5,6 @@ from wechatpy.client.api import WeChatMessage, WeChatTemplate
 import requests
 import os
 import random
-import web
-from handle import Handle
-
-urls = (
-    '/wx', 'Handle',
-)
-
-if __name__ == '__main__':
-    app = web.application(urls, globals())
-    app.run()
 today = datetime.now()
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
